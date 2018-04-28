@@ -235,7 +235,10 @@ footer{
 /* //////////// */
 /* Start of media queries */
 
+
+/* Media query for 980px */
 @media (max-width: 980px) {
+    /* settings for main section */
     .main{
         width: 100%;
         max-width: 648px;
@@ -244,13 +247,17 @@ footer{
 
     }
 
+    /* Changing font size for smaller size */
     p{
         font-size: 14px;
     }
     
 }
+/* End of media query for 980px */
 
+/* Start of media query for 768px */
 @media (max-width: 768px) {
+    /* Setting width to be responsive to browser window and reducing margins */
     .main{
         max-width: 648px;
         width: auto;
@@ -258,24 +265,33 @@ footer{
         margin-right: 2rem;
     }
 
+    /* Reducing font-size */
     p{
-        font-size: 14px;
+        font-size: 12px;
     }
 
+    /* Sets the forms to resize automatically */
     form{
         width: auto;
     }
-}
 
+}
+/* End of media query for 768px */
+
+/* Start of media query for 640px */
 @media (max-width: 640px) {
+    
     .top{
         position: static;
     }
 
+    /* Changing menu sizes */
     .top h5{
-        position: static:
+        position: static;
+        font-size: 12px;
     }
     
+    /* making the main section size responsive */
     .main{
         max-width: 578px;
         width: auto;
@@ -283,10 +299,7 @@ footer{
         margin-right: auto;
     }
 
-    p{
-        font-size: 14px;
-    }
-
+    /* Setting the profile pic to go on top */
     .profilepic{
         float: none;
         max-width: 578px;
@@ -294,6 +307,7 @@ footer{
 
     }
 
+    /* Setting the links to move down with the images */
     .portfolioimages a{
         float: none;
         float: none;
@@ -301,12 +315,14 @@ footer{
         position: static;
     }
 
+    /* Makes the images and project titles set in a line */
     .portfolio{
         float: none;
         display: block;
         position: static;
     }
 
+    /* Changes width for the project names */
     .portfolio h3{
         width: 275px;
     }
