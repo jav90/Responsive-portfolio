@@ -1,0 +1,313 @@
+/* Starter tags */
+html{
+    height: 100%;
+    margin: 0;
+}
+
+/* body tag */
+body{
+    /* Repeated background image */
+    background-image: url(../images/funky-lines.png);
+    background-repeat: repeat;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    height: 100%;
+}
+
+/* Properties for wrapper container used for the sticky footer */
+.wrapper{
+    min-height: 100%;
+    /* Negative margin the size of the footer */
+    margin-bottom: -68px;
+}
+
+/* Clearfix to define the separation of the content */
+.clearfix::after{
+    Content: "";
+    Clear: both;
+    display: block;
+}
+
+/* Section with the top bar styles */
+/* It's the same for all 3 html files */
+/* Header properties */
+header{
+    background-color: #4aaaa5;
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    padding: 35px;
+    font-size: 22px;
+}
+
+/* Properties for section containing all the elements at the top of the page */
+.top{
+    background-color:#ffffff;
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+    border-color: #cccccc;
+    border-bottom:solid;
+}
+
+/* Div used to center the contents inside the section */
+.HeaderMargin{
+    width: auto;
+    max-width: 960px;
+    margin: auto;
+    height: 92px;
+    background-color: inherit;
+    
+}
+
+/* Specific properties to the elements on the right side of the header */
+.top h5{
+    float: right;
+    padding: 2px 20px;
+    height: 14px;
+    margin-bottom: 38px;
+    margin-top: 36px;
+}
+
+/* Setting properties for the links at the top-right side of the page */
+.top a:link{
+    color: #777777;
+}
+.top a:visited{
+    color: #777777;
+}
+.top a:hover{
+    color: #cccccc;
+}
+.top a:active{
+    color: #666666;
+}
+
+/* Class for the middle element of the links on the right side of the header. Used to create the separators. */
+.HeaderProfile{
+    border-right: #cccccc solid;
+    border-left: #cccccc solid;
+    
+}
+/* End of the styles for the header section */
+/* 
+*/
+
+
+/* Section with the main content of the pages */
+.main{
+    background-color: #ffffff;
+    border: solid 2px #dddddd;
+    width: 960px;
+    margin: 0 auto 112px auto;
+    padding: 34px;
+}
+
+h2{
+    color: #4aaaa5;
+    border-bottom:solid;
+    border-color: #cccccc;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    margin-bottom: 30px;
+    padding-bottom: 34px;
+}
+/* End of common styles */
+/* 
+ */
+
+/* index.html styles */
+.profilepic{
+    float: left;
+    padding: 0 34px 34px 0;
+}
+
+p{
+    padding-bottom: 20px;
+    line-height: 2;
+}
+/* End of styles for index.html */
+/* 
+ */
+
+/* contact.html styles */
+form{
+    width: 100%;
+}
+
+input[type=text]{
+    width: 100%;
+    max-width: 936px;
+    padding: 12px;
+    border: solid 1px #cccccc;
+    margin: 12px 12px 12px 0;
+}
+
+/* Changes size of the message box */
+.inputMessage{
+    height: 198px;
+}
+
+/* Changes style for submit button */
+input[type=submit]{
+    font-size: 14px;
+    padding: 13px 30px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    border: solid 1px #4aaaa5;
+}
+
+/* Adds hover property for submit button */
+input[type=submit]:hover{
+    background-color: #ffffff;
+    color: #4aaaa5;
+    border: solid 1px #4aaaa5;
+}
+/* End of contact.html specific styles */
+/* 
+*/
+
+/* Styles for portfolio.html */
+    
+/* Div containing the content for portfolio. Used to set the width for the content */
+.portfolioimages{
+    width: 960px;
+}
+
+/* Used to contain the images and text for each project shown in portfolio */
+.portfolio{
+    position: relative;
+    width: 275px;
+    height: 205px;
+    margin: 30px 60px 30px 0;
+    float: left;
+}
+
+/* Properties for the images of the projects */
+.portfolio img{
+    float: left;
+    height: 205px;
+    width: 275px;
+    
+}
+
+/* Text for the projects */
+.portfolio h3{
+    background-color: #4aaaa5;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    float: left;
+    position: absolute;
+    z-index: 2;
+    margin: 135px auto auto auto;
+    width: 100%;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* End of the porfolio.html specific styles */
+/* 
+ */
+
+/* Section used to contain the footer and make it sticky */
+.push{
+    height: 68px;
+}
+
+/* footer properties */
+footer{
+    background-color: #666666;
+    border-top: solid;
+    border-color: #4aaaa5;
+    border-width: 8px;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 42px;
+    padding-bottom: 8px;
+}
+
+/* //////////// */
+/* Start of media queries */
+
+@media (max-width: 980px) {
+    .main{
+        width: 100%;
+        max-width: 648px;
+        margin-left: 2rem;
+        margin-right: 5rem;
+
+    }
+
+    p{
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .main{
+        max-width: 648px;
+        width: auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    form{
+        width: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .top{
+        position: static;
+    }
+
+    .top h5{
+        position: static:
+    }
+    
+    .main{
+        max-width: 578px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .profilepic{
+        float: none;
+        max-width: 578px;
+        width: auto;
+
+    }
+
+    .portfolioimages a{
+        float: none;
+        float: none;
+        display: block;
+        position: static;
+    }
+
+    .portfolio{
+        float: none;
+        display: block;
+        position: static;
+    }
+
+    .portfolio h3{
+        width: 275px;
+    }
+}
